@@ -10,7 +10,10 @@ on:
       - ".github/workflows/build.yml"
       - "patches/**"
 
-jobs: 
+permissions:
+  contents: write
+
+jobs:
   check_version:
     runs-on: ubuntu-22.04
 
